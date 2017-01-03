@@ -1,0 +1,15 @@
+{
+    "selectedProjects" : [
+        {
+            "name": "clarinet",
+            "place": "HARC",
+            "description": "A live visualization of the execution of instrumented code. Lets programmers see the shape of and ask questions about their software's execution."
+        },
+        {
+            "name": "ohm-editor",
+            "place": "HARC",
+            "description": "A live editor for prototyping programming languages."
+        }
+    ],
+    "justForFun": []
+}

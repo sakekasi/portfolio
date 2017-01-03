@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="tufte.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700|Gentium+Book+Basic:400,400i,700,700i');
+
+        body {
+                background-color: hsl(0, 0%, 100%);
+                font-family: 'Fira Sans', sans-serif;
+                color: hsla(0, 0%, 7%, 1);
+        }
+
+        img {
+            border: 1px solid hsl(0, 0%, 69.8%);
+            border-radius: 3px;
+        }
+
+        /*#selectedProjects > ul > li {
+            display: flex;
+            flex-direction: column;
+            width: auto;
+        }*/
+
+        /*body {
+            font-size: 16px;
+            line-height: 1.2em;
+            margin: 1em auto 4em auto;
+            max-width: 720px;
+            padding: 0 18px;
+            position: relative;
+        }*/
+
+        #selectedProjects > ul {
+            width: initial;
+            list-style-type: none;
+        }
+
+        #selectedProjects figure {
+            margin-bottom: 0px;
+            margin-top: 5px;
+        }
+
+        #selectedProjects .topText {
+            font-size: 1.2rem;
+        }
+
+        #selectedProjects .topText .name {
+            font-weight: 500;
+        }
+
+        #selectedProjects .topText .place,
+        #selectedProjects .topText .at {
+            color: hsl(0, 0%, 85%);
+        }
+
+        .description {
+            margin-top: 0px;
+            font-size: 1rem;
+            line-height: 1.4rem;
+        }
+    </style>
+</head>
+<body>
+    <article>
+    <section id="selectedProjects">
+        <ul></ul>
+    </section>
+    </article>
+    <script src="jspm_packages/system.js"></script>
+    <script src="config.js"></script>
+    <script>
+        System.import('index.js');
+    </script>
+</body>
+</html>
