@@ -9,15 +9,21 @@ const url = 'data.json';
 
 ajax({url}, (code, text) => {
     const data = JSON.parse(text);
-    const list = $('#selectedProjects > ul');
+    const selectedProjects = $('#selectedProjects > ul');
+    const justForFun = $('#justForFun');
 
     data.selectedProjects.forEach(project => {
-        let projectDOM = make(project);
-        list.appendChild(projectDOM);
+        let projectDOM = makeSelectedProject(project);
+        selectedProjects.appendChild(projectDOM);
+    });
+
+    data.justForFun.forEach(project => {
+      let projectDOM = makeFunProject(project);
+      justForFun.appendChild(projectDOM);
     });
 });
 
-function make(project) {
+function makeSelectedProject(project) {
     return <li id={project.name}>
         <span class='topText'>
             <span class='name'>{project.name}</span> <span class='at'>@</span>
@@ -30,17 +36,16 @@ function make(project) {
             <img src={`images/${project.name}.png`}/>
         </figure>
     </li>;
+}
 
-    // <li>
-    //     <span class='topText'>
-    //         <span class='name'>{project.name}</span> @
-    //         <span class='place'>{project.place}</span>
-    //     </span>
-    //     <figure>
-    //         <label for='mn-exports-imports' class='margin-toggle'>⊕</label>
-    //         <input type='checkbox' id='mn-exports-imports' class='margin-toggle'/>
-    //         <span class='description marginnote'>{project.description}</span>
-    //         <img src={`images/${project.name}.png`} alt='Exports and Imports to and from Denmark &amp; Norway from 1700 to 1780'/>
-    //     </figure>
-    // </li>;
+
+function makeFunProject(project) { // 160, 20
+  let placeDOM = [' ', <span class='at'>@</span>, <span class='place'>{project.place}</span>];
+  return <div class='funProject' id={project.name}>
+    <span class='topText'>
+      <span class='description'>{project.description}</span>
+      {project.place !== null ? placeDOM : null}
+    </span>
+    <img src={`images/${project.name}.png`}/>
+  </div>;
 }

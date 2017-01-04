@@ -11,5 +11,16 @@
             "description": "A live editor for prototyping programming languages."
         }
     ],
-    "justForFun": []
+    "justForFun": [
+      {
+        "name": "3D-parseTree",
+        "place": "HARC",
+        "description": "a 3D parse tree"
+      },
+      {
+        "name": "siddhartha",
+        "place": null,
+        "description": "degenerating prose"
+      }
+    ]
 }

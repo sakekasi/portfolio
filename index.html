@@ -50,8 +50,8 @@
             font-weight: 500;
         }
 
-        #selectedProjects .topText .place,
-        #selectedProjects .topText .at {
+        .topText .place,
+        .topText .at {
             color: hsl(0, 0%, 85%);
         }
 
@@ -60,13 +60,30 @@
             font-size: 1rem;
             line-height: 1.4rem;
         }
+
+        #justForFun {
+          padding-left: 5%;
+          padding-right: 5%;
+          max-width: 55%;
+        }
+
+        .funProject {
+          display: inline-flex;
+          flex-direction: column;
+        }
+
+        .funProject:not(:last-child) {
+          margin-right: 20px;
+        }
     </style>
 </head>
 <body>
     <article>
-    <section id="selectedProjects">
-        <ul></ul>
-    </section>
+      <section id="selectedProjects">
+          <ul></ul>
+      </section>
+      <section id="justForFun">
+      </section>
     </article>
     <script src="jspm_packages/system.js"></script>
     <script src="config.js"></script>
