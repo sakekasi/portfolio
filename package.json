@@ -11,7 +11,10 @@
   "devDependencies": {
     "jspm": "^0.16.48",
     "jspm-git": "^0.6.1",
-    "jspm-local": "^1.0.2"
+    "jspm-local": "^1.0.2",
+    "babel": "npm:babel-core@^5.8.24",
+    "babel-runtime": "npm:babel-runtime@^5.8.24",
+    "core-js": "npm:core-js@^1.1.4"
   },
   "jspm": {
     "dependencies": {
@@ -23,11 +26,6 @@
       "plain-jsx": "npm:plain-jsx@^1.0.0",
       "systemjs-plugin-css": "npm:systemjs-plugin-css@^0.1.37",
       "vue": "npm:vue@^2.2.6"
-    },
-    "devDependencies": {
-      "babel": "npm:babel-core@^5.8.24",
-      "babel-runtime": "npm:babel-runtime@^5.8.24",
-      "core-js": "npm:core-js@^1.1.4"
     },
     "buildConfig": {
       "transpileES6": true
