@@ -1,0 +1,6 @@
+<div>
+  <selected-projects 
+    :largeProjects="data['large-projects']"
+    :smallProjects="data['small-projects']"
+    />
+</div>

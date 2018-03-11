@@ -1,0 +1,86 @@
+@import "https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400i,700,700i";
+@import "fonts/fira/fira.css";
+@import "fonts/equity-b.css";
+@import "fonts/league-spartan/stylesheet.css";
+
+@import "global-vars.less";
+@import "mixins.less";
+
+// MAIN STYLES
+// -----------
+
+dt-article {
+  font-family: @body-font-stack;
+  font-weight: @light;
+  color: hsla(0, 0%, 20%, 1);
+
+  p, ul, ol {
+    font-family: inherit;
+    font-weight: inherit;
+    color: inherit;
+  }
+}
+
+dt-footer {
+  display: block;
+  font-family: @body-font-stack;
+  font-weight: @light;
+  color: hsla(0, 0%, 100%, 1);
+  background-color: hsl(0, 0%, 26%);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  svg.feather {
+    margin-right: 0.5rem;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+dt-section h1.title {
+  color: @title-color;
+  font-weight: @extra-bold;
+  font-family: @title-font-stack;
+  font-size: 5rem;
+  font-weight: @bold;
+}
+
+dt-section {
+  .content {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.l-body {
+  font-size: 110%;
+}
+
+.fix-aspect-ratio {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: (9 / 14) * 100%;
+  }
+
+  > .fix-aspect-ratio-contents {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+a.hidden {
+  display:none;
+}

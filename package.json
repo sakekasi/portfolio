@@ -9,18 +9,28 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jspm": "^0.16.48"
+    "jspm": "^0.16.48",
+    "jspm-git": "^0.6.1",
+    "jspm-local": "^1.0.2"
   },
   "jspm": {
     "dependencies": {
-      "less": "npm:systemjs-less-plugin@^2.0.0",
+      "feather-icons": "npm:feather-icons@^4.7.0",
+      "jspm-git": "npm:jspm-git@^0.6.1",
+      "less": "npm:systemjs-less-plugin@^2.2.3",
+      "mrman/systemjs-plugin-vue-template-compiler": "gitlab:mrman/systemjs-plugin-vue-template-compiler@^2.2.1",
       "nanoajax": "npm:nanoajax@^0.4.3",
-      "plain-jsx": "npm:plain-jsx@^1.0.0"
+      "plain-jsx": "npm:plain-jsx@^1.0.0",
+      "systemjs-plugin-css": "npm:systemjs-plugin-css@^0.1.37",
+      "vue": "npm:vue@^2.2.6"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
       "babel-runtime": "npm:babel-runtime@^5.8.24",
       "core-js": "npm:core-js@^1.1.4"
+    },
+    "buildConfig": {
+      "transpileES6": true
     }
   }
 }

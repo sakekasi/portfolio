@@ -1,26 +1,102 @@
 {
-    "selectedProjects" : [
+    "large-projects" : [
         {
-            "name": "clarinet",
+            "id": "seymour",
             "place": "HARC",
-            "description": "A live visualization of the execution of instrumented code. Lets programmers see the shape of and ask questions about their software's execution."
+            "shortDescription": "seymour",
+            "description": "TODO",
+            "url": "https://harc.github.io/seymour-live2017/",
+            "hasVideo": true
         },
         {
-            "name": "ohm-editor",
+            "id": "clarinet",
             "place": "HARC",
-            "description": "A live editor for prototyping programming languages."
+            "shortDescription": "clarinet",
+            "description": "A live visualization of the execution of instrumented code. Lets programmers see the shape of and ask questions about their software's execution.",
+            "url": "https://sakekasi.github.io/clarinet/",
+            "config": {}
+        },
+        {
+            "id": "ohm",
+            "place": "HARC",
+            "shortDescription": "ohm",
+            "description": "A live editor for prototyping programming languages.",
+            "url": "https://ohmlang.github.io/",
+            "hasVideo": true,
+            "config": {}
+        },
+        {
+            "id": "compact-parse-viz",
+            "place": "CDG",
+            "description": "a compact parse tree visualization",
+            "shortDescription": "a compact parse tree visualization",
+            "url": "http://sakekasi.github.io/alternateExample/index.html",
+            "hasVideo": true,
+            "config": {}
         }
     ],
-    "justForFun": [
+    "small-projects": [
       {
-        "name": "3D-parseTree",
-        "place": "HARC",
-        "description": "a 3D parse tree"
+        "id": "3D-parseTree",
+        "place": "CDG",
+        "description": "a 3D parse tree visualization",
+        "shortDescription": "a 3D parse tree visualization",
+        "url": "http://sakekasi.github.io/ohm-threed-visualization/",
+        "hasVideo": true,
+        "config": {}
       },
       {
-        "name": "siddhartha",
+          "id": "nestable-ui",
+          "place": "CDG",
+          "url": "https://sakekasi.github.io/nestable-example-ui/",
+          "description": "a grammar-based editing UI",
+          "shortDescription": "a grammar-based editing UI",
+          "hasVideo": true
+      },
+      {
+          "id": "logic-idsl",
+          "place": "CDG",
+          "url": "https://github.com/sakekasi/logic-idsl",
+          "description": "a DSL for logic programming",
+          "shortDescription": "a DSL for logic programming",
+          "config": {
+              "left": -5,
+              "scale": 200
+          }
+      },
+      {
+        "id": "siddhartha",
         "place": null,
-        "description": "degenerating prose"
+        "url": "http://sakekasi.github.io/text-falls-apart/",
+        "description": "a piece of degenerating prose",
+        "shortDescription": "a piece of degenerating prose",
+        "config": {
+            "top": -20,
+            "left": -5,
+            "scale": 150
+        }
+      },
+      {
+          "id": "albers-io",
+          "place": null,
+          "url": "http://sakekasi.github.io/albers-io/",
+          "description": "a workspace for 'Interaction of Color'",
+          "shortDescription": "a workspace for 'Interaction of Color'",
+          "config": {
+              "scale": 110
+          }
+      },
+      {
+          "id": "block-layout",
+          "place": "CDG",
+          "url": "http://sakekasi.github.io/blocks-prototype/",
+          "description": "an experiment in code layout",
+          "shortDescription": "an experiment in code layout",
+          "config": {
+              "scale": 115
+          }
       }
+    ],
+    "timeline": [   
     ]
 }

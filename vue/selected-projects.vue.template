@@ -1,0 +1,23 @@
+<dt-section id="selected-projects">
+  <h1 class="title l-page">Selected Projects</h1>
+  <div class="large-projects l-page">
+    <large-project-tile v-for="project in largeProjects"
+      :id="project.id"
+      :description="project.shortDescription"
+      :place="project.place"
+      :config="project.config"
+      :url="project.url"
+      :hasVideo="project.hasVideo"
+    />
+  </div>
+  <div class="small-projects l-page">
+    <small-project-tile v-for="project in smallProjects"
+      :id="project.id"
+      :description="project.shortDescription"
+      :place="project.place"
+      :config="project.config"
+      :url="project.url"
+      :hasVideo="project.hasVideo"
+    />
+  </div>
+</dt-section>

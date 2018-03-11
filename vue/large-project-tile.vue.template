@@ -1,0 +1,21 @@
+<div class="large project-tile" :id="id" @click="onClick">
+  <a :href="url" target="_blank" class="hidden" ref="link"></a>
+  <span class="topText">
+    <span class="description">{{ description }}</span>
+    <span class="place" v-if="place !== null" >@{{ place }}</span>
+  </span>
+  <div class="fix-aspect-ratio">
+    <div class="imgContainer fix-aspect-ratio-contents">
+      <video :muted="true" preload="auto" :poster="imgSrc" loop
+            onmouseover="this.play()" onmouseout="this.pause()"
+            :style="style">
+        <source :src="videoSrc" type="video/mp4"/>
+      </video>
+      <span class="placeholder"></span>
+      <!--<img :src="src" :style="style"/> -->
+    </div>
+  </div>
+  <div class="overlay-icons">
+    <i v-if="hasVideo" data-feather="play-circle"></i>
+  </div>
+</div>
