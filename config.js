@@ -27,6 +27,7 @@ System.config({
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "core-js": "npm:core-js@1.2.7",
+    "css": "npm:systemjs-plugin-css@0.1.37",
     "feather-icons": "npm:feather-icons@4.7.0",
     "jspm-git": "npm:jspm-git@0.6.1",
     "less": "npm:systemjs-less-plugin@2.2.3",
@@ -34,7 +35,6 @@ System.config({
     "nanoajax": "npm:nanoajax@0.4.3",
     "plain-jsx": "npm:plain-jsx@1.0.0",
     "systemjs-plugin-css": "npm:systemjs-plugin-css@0.1.37",
-    "css": "npm:systemjs-plugin-css@0.1.37",
     "vtc": "gitlab:mrman/systemjs-plugin-vue-template-compiler@2.2.1",
     "vue": "npm:vue@2.5.14",
     "github:jspm/nodelibs-assert@0.1.0": {
